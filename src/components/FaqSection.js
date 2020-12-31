@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Layout } from "../Styles";
 import Toggle from "./Toggle";
+import { AnimateSharedLayout, anitmateSharedLayout } from "framer-motion";
 
 const FaqSection = () => {
   return (
@@ -9,9 +10,8 @@ const FaqSection = () => {
       <h2>
         Any Questions <span>FAQ</span>
       </h2>
-      <Toggle>
-        <div className="question">
-          <h4>How Do I Start?</h4>
+      <AnimateSharedLayout>
+        <Toggle title="How Do I Start?">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
 
@@ -20,13 +20,8 @@ const FaqSection = () => {
               Necessitatibus,neque.
             </p>
           </div>
-
-          <div className="faq-line"></div>
-        </div>
-      </Toggle>
-      <Toggle>
-        <div className="question">
-          <h4>Daily Schedule</h4>
+        </Toggle>
+        <Toggle title="Daily Schedule">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -34,12 +29,8 @@ const FaqSection = () => {
               Necessitatibus,neque.
             </p>
           </div>
-          <div className="faq-line"></div>
-        </div>
-      </Toggle>
-      <Toggle>
-        <div className="question">
-          <h4>Different Payment Methods</h4>
+        </Toggle>
+        <Toggle title="Different Payment Methods">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -47,12 +38,8 @@ const FaqSection = () => {
               Necessitatibus,neque.
             </p>
           </div>
-          <div className="faq-line"></div>
-        </div>
-      </Toggle>
-      <Toggle>
-        <div className="question">
-          <h4>What products do you offer</h4>
+        </Toggle>
+        <Toggle title="What Products Do You Offer">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -60,9 +47,8 @@ const FaqSection = () => {
               Necessitatibus,neque.
             </p>
           </div>
-          <div className="faq-line"></div>
-        </div>
-      </Toggle>
+        </Toggle>
+      </AnimateSharedLayout>
     </Faq>
   );
 };
