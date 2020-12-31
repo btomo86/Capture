@@ -8,10 +8,10 @@ import { Layout, Description, Image } from "../Styles";
 import styled from "styled-components";
 import { scrollReveal } from "../animation";
 
-import { UseScroll } from "./UseScroll";
+import { useScroll } from "./useScroll";
 
 const ServiceSection = () => {
-  const [element, controls] = UseScroll();
+  const [element, controls] = useScroll();
   return (
     <Services
       variants={scrollReveal}

@@ -2,12 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import { Layout } from "../Styles";
 import Toggle from "./Toggle";
-import { AnimateSharedLayout, anitmateSharedLayout } from "framer-motion";
-import { UseScroll } from "./UseScroll";
+import { AnimateSharedLayout } from "framer-motion";
+import { useScroll } from "./useScroll";
 import { scrollReveal } from "../animation";
 
 const FaqSection = () => {
-  const [element, controls] = UseScroll();
+  const [element, controls] = useScroll();
   return (
     <Faq
       variants={scrollReveal}
@@ -22,10 +22,10 @@ const FaqSection = () => {
         <Toggle title="How Do I Start?">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
-
             <p>
-              lorem ipsum, dolor sit amet consectetur adipiscing
-              Necessitatibus,neque.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
+              autem accusamus ex laboriosam porro, adipisci quam voluptatum
+              magnam placeat corporis.
             </p>
           </div>
         </Toggle>
@@ -33,26 +33,26 @@ const FaqSection = () => {
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
-              lorem ipsum, dolor sit amet consectetur adipiscing
-              Necessitatibus,neque.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error,
+              totam.
             </p>
           </div>
         </Toggle>
-        <Toggle title="Different Payment Methods">
+        <Toggle title="Diferrent Payment Methods">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
-              lorem ipsum, dolor sit amet consectetur adipiscing
-              Necessitatibus,neque.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Necessitatibus, neque.
             </p>
           </div>
         </Toggle>
-        <Toggle title="What Products Do You Offer">
+        <Toggle title="What Products do you offer.">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
-              lorem ipsum, dolor sit amet consectetur adipiscing
-              Necessitatibus,neque.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Necessitatibus, neque.
             </p>
           </div>
         </Toggle>
